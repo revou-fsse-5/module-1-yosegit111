@@ -7,9 +7,14 @@ Tech sales professional currently working as Account Executive at MongoDB.
 
 ![gambar](./assets/gita.webp)
 
-## Connect with mea
+## Connect with me
 |Socials   |Link   |
 |-------|------------|
 |LinkedIn   |[Gita Asaria](https://sg.linkedin.com/in/gita-asaria)     | 
 |Whatsapp  |+65 83198749     | 
 |Instagram   |@yosegita     | 
+
+## What I'm Building
+I'm building a simpile HTML site for Indonesian Professionals Association in Singapore. In this page, members can sign up and view upcoming events, as well as registering for them directly. 
+
+Thank you!
