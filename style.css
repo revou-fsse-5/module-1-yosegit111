@@ -3,44 +3,157 @@
     padding: 0;
 }
 
-table {
-    border-collapse: collapse;
-    width: 100%;
-    }
-th, td{
-    padding: 8px;
-    text-align: center;
-    border-right: 1px solid #DDD;
-    }
+a {
+    text-decoration:none;
+    color:white;
+  }
+
+button {
+    background: none;
+	color: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	outline: none;
+    font: inherit;
+}
+
+.registerButton{
+    padding: 0.5em 1.5em;
+    background-color: crimson;
+    border-color:crimson;
+    color: white;
+    border-radius: 1em 1em; /* rounded corner */
+}
+
+.registerButton:hover{
+    text-decoration: underline;
+}
 
 main {
-background-color:azure;
+    background-color: cornsilk;
 }
 
 header{
-    padding-bottom: 50px;
     background: url(assets/sg-vol.jpg) no-repeat center center;
     background-size:cover;
     width:100%;
+    text-align: center;
+    color:white;
 }
 
-
 header h1{
-    padding-top: 5%;
-    padding-left:5%;
-    padding-right: 50%;
-    text-align: left;
-    color:aliceblue;
+    padding:10% 5% 1% 5%;
     font-size: 50px;
     text-shadow: 2px 2px #808080;
 }
 
 header p{
-    padding-left:5%;
-    padding-right:50%;
-    text-align: left;
-    color:aliceblue;
+    padding:1% 5% 10% 5%;
     font-size: 20px;
+}
+
+section {
+    padding-top: 5%;
+    padding-bottom:5%;
+}
+
+section h2{
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+section table {
+    border-collapse: collapse;
+    width: 100%;
+    }
+section th, td{
+    padding: 8px;
+    text-align: center;
+    border-right: 1px solid #DDD;
+    }
+
+.container {
+    width:100%;
+    height: min-content;
+    padding-bottom: 10%;
+    display:flex;
+}
+    .regist-form{
+        flex: 32%;
+        background-color: cornsilk;
+        padding:2% 5%;
+    }
+          
+    .video-ipa {
+        background: url(assets/people-collage.png) no-repeat center center;
+        background-size: 250%;
+        flex: 68%;
+        align-content: center;
+        text-align: center;
+        color:white;
+        font-weight: bold;
+        font-size: small;
+        width: 250px;
+
+    }
+
+form h2{
+    margin-bottom: 5%;
+}
+
+label,input [type=text]{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    text-align: left;
+    color:black;
+    font-weight: bold;
+    font-size: small;
+    width: 300px;
+    padding-top:2%;
+}
+
+input[type=text]{
+    border: none;
+    border-radius: 0.5em 0.5em;
+    padding: 1% 1%;
+    margin-bottom: 1%;
+    width: 300px;
+    height: 20px;
+    text-align: left center;
+    background:lightgrey;
+    color:black
+}
+
+form ul {
+    list-style-type: none;
+    padding-top: 0.5%;
+    padding-bottom: 1%;
+  }
+
+form ul li{
+    font-weight: bold;
+    font-size: small;
+}
+
+textarea{
+    margin-top:1%;   
+    margin-bottom:1%;
+}
+
+.submitButton{
+    padding: 0.5em 1.5em;
+    background-color: crimson;
+    border-color:crimson;
+    color: white;
+    border-radius: 1em 1em; /* rounded corner */
+}
+
+.submitButton:hover{
+    text-decoration: underline;
 }
 
 nav {
