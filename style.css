@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    }
+th, td{
+    padding: 8px;
+    text-align: center;
+    border-right: 1px solid #DDD;
+    }
+
+main {
+background-color:azure;
+}
+
+header{
+    padding-bottom: 50px;
+    background: url(assets/sg-vol.jpg) no-repeat center center;
+    background-size:cover;
+    width:100%;
+}
+
+
+header h1{
+    padding-top: 5%;
+    padding-left:5%;
+    padding-right: 50%;
+    text-align: left;
+    color:aliceblue;
+    font-size: 50px;
+    text-shadow: 2px 2px #808080;
+}
+
+header p{
+    padding-left:5%;
+    padding-right:50%;
+    text-align: left;
+    color:aliceblue;
+    font-size: 20px;
+}
+
+nav {
+    position:fixed;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+    padding-right: 15px;
+    width: 100%;
+    float:right;
+    background-color:black;
+}
+
+nav ul {
+    list-style-type: none;
+  }
+
+nav ul li {
+    float: right;
+    margin-right: 0.5em;
+  }
+
+nav ul li a {
+    padding: 0.25em 1em;
+    text-decoration: none; /* no underline */
+    color:white; 
+    border-radius: 1em 1em; /* rounded corner */
+  }
+
+  nav ul li a:hover {
+    background-color:white;
+    color:black; 
+  }
+
