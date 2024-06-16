@@ -20,18 +20,8 @@
 
         <h1>Welcome to Indonesian Professionals Association Singapore</h1>
         <p>Connect with industry peers, exchange knowledge and experience, and participate in engaging events</p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
       </header>
       
-      <p>
-        <br> 
-        <br> 
-        <br> 
-      </p>
-
       <section>
         <h2> Upcoming IPA SG events</h2>
         <table>
@@ -48,10 +38,10 @@
               <td><b>July Volunteering: Beach Clean Up</b></td>
             </tr>
             <tr>
-              <td><a href="https://maps.app.goo.gl/ChcwgaPnqQymWFUA9"> OUE Bayfront</a> </td>
-              <td><a href="https://maps.app.goo.gl/vUGy9x42TDTefX2L6">Indonesian Embassy, Singapore</a></td>
-              <td><a href="https://maps.app.goo.gl/vUGy9x42TDTefX2L6">Indonesian Embassy, Singapore</a> </td>
-              <td><a href="https://maps.app.goo.gl/hjQKE2ZRL8pkMenm6">Sentosa Siloso Beach </a></td>
+              <td> OUE Bayfront</a> </td>
+              <td>Indonesian Embassy, Singapore</a></td>
+              <td>Indonesian Embassy, Singapore</a> </td>
+              <td>Sentosa Siloso Beach </a></td>
             </tr>
             <tr>
               <td>10 Jun 2024, 10.00 SGT</td>
@@ -61,66 +51,63 @@
               
             </tr>
             <tr>
-                <td><a href=#>Register now</a></td>
-                <td><a href=#>Register now</a></td>
-                <td><a href=#>Register now</a></td>
-                <td><a href=#>Register now</a></td>
+                <td><button class="registerButton"><a href=#>Register now</a></button></td>
+                <td><button class="registerButton"><a href=#>Register now</a></button></td>
+                <td><button class="registerButton"><a href=#>Register now</a></button></td>
+                <td><button class="registerButton"><a href=#>Register now</a></button></td>
             </tr>
           </table>
       </section> 
-
-        <p>
-            <br> 
-            <br> 
-            <br> 
-        </p>
-        
-
+    
+    <div class="container">
+      <div class="regist-form" id="register-form">
         <form> 
           <h2> Sign Up to be an IPA Member</h2>
-          <br>
+          <div class="fill-form">
             <label for id="firstname">First name</label>
             <input type="text" name="firstname" id="firstname"> 
             <label for id="lastname">Last name</label>
-            <input type="text" name="lastname" id="lastname"><br>
-            <p></p>
+            <input type="text" name="lastname" id="lastname">
             <label for id="username">Username</label>
-           <input type="text" name="username" id="username"> <br>
-           <p></p>
+           <input type="text" name="username" id="username">
            <label for id="Gender">Gender</label>
-           <input type = "radio" name = "Gender" value = "Male"> Male
-           <input type = "radio" name = "Gender" value = "Female"> Female <br>
-           <p></p>
+           <ul>
+           <li><input type = "radio" name = "Gender" value = "Male"> Male</li>
+           <li><input type = "radio" name = "Gender" value = "Female"> Female </li>
+          </ul>
+
            <label for id="email">Email</label>
           <input type="text" name="email" id="email">
-          <p></p> 
           <label for id="companyname">Company Name</label> 
-          <input type="text" name="companyname" id="companyname"> <br>
-          <p></p>
-          Would you like to receive marketing newletter consisting of organization updates, events, and programs? <br> 
-          <input type = "radio" name = "Marketing" value = "Yes"> Yes
-          <input type = "radio" name = "Marketing" value = "No"> No <br>
-          <p></p>
-
-          Interests<br>
-          <input type = "checkbox" name = "Career"> Career and Professional Development <br>
-          <input type = "checkbox" name = "Travel"> Travel and Culinary <br>
-          <input type = "checkbox" name = "Tech"> Technology and Startups <br>
-          <input type = "checkbox" name = "Finance"> Financial Management <br>
-          <input type = "checkbox" name = "Admin"> Administration (e.g PR application) <br>
-          <p></p>
+          <input type="text" name="companyname" id="companyname">
+          <label for id="opt-in">Would you like to receive marketing newletter consisting of organization updates, events, and programs? </label> 
+          <ul>
+          <li><input type = "radio" name = "Marketing" value = "Yes"> Yes</li>
+          <li><input type = "radio" name = "Marketing" value = "No"> No</li>
+        </ul>
+          <label for id="interest">Interests</label>
+          <ul>
+            <li><input type = "checkbox" name = "Career"> Career and Professional Development</li>
+            <li><input type = "checkbox" name = "Travel"> Travel and Culinary</li>
+            <li><input type = "checkbox" name = "Tech"> Technology and Startups</li>
+            <li> <input type = "checkbox" name = "Finance"> Financial Management</li>
+            <li> <input type = "checkbox" name = "Admin"> Administration (e.g PR application)</li>
+          </ul>
           <textarea name="story" rows="5" cols="30" placeholder="Additional Comments or Requests"></textarea>
+        </div>
           <p></p>
-          <button type="submit">Submit</button>
+          <button class="submitButton" type="submit">Submit</button>
+
          </form> 
-      <br>
-      <br>
+      </div>
     
-      <figure style="text-align:center;">
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Adf0FpcqRCg?si=sLycFnu0O6XdHdwJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="video-ipa">
+      <figure>
+         <iframe width="500" height="315" src="https://www.youtube.com/embed/Adf0FpcqRCg?si=sLycFnu0O6XdHdwJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           <figcaption> Watch our global IPA (GIPA) gathering</figcaption>
       </figure>
-      
+    </div>
+  </div>  
       <footer style="font-size: x-small;text-align: center;"><hr> Copyright @2024 IPA SG</footer>
       </body>
   
