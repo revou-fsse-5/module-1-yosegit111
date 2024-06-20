@@ -19,7 +19,7 @@ button {
 }
 
 .registerButton{
-    padding: 0.5em 1.5em;
+    padding: 0.25em 0.5em;
     background-color: crimson;
     border-color:crimson;
     color: white;
@@ -27,6 +27,17 @@ button {
 }
 
 .registerButton:hover{
+    text-decoration: underline;
+}
+.submitButton{
+    padding: 0.5em 1.5em;
+    background-color: crimson;
+    border-color:crimson;
+    color: white;
+    border-radius: 1em 1em; /* rounded corner */
+}
+
+.submitButton:hover{
     text-decoration: underline;
 }
 
@@ -40,120 +51,13 @@ header{
     width:100%;
     text-align: center;
     color:white;
+    padding-bottom: 20px;
 }
 
 header h1{
     padding:10% 5% 1% 5%;
     font-size: 50px;
     text-shadow: 2px 2px #808080;
-}
-
-header p{
-    padding:1% 5% 10% 5%;
-    font-size: 20px;
-}
-
-section {
-    padding-top: 5%;
-    padding-bottom:5%;
-}
-
-section h2{
-    padding-bottom: 3%;
-    text-align: center;
-}
-
-section table {
-    border-collapse: collapse;
-    width: 100%;
-    }
-section th, td{
-    padding: 8px;
-    text-align: center;
-    border-right: 1px solid #DDD;
-    }
-
-.container {
-    width:100%;
-    height: min-content;
-    padding-bottom: 10%;
-    display:flex;
-}
-    .regist-form{
-        flex: 32%;
-        background-color: cornsilk;
-        padding:2% 5%;
-    }
-          
-    .video-ipa {
-        background: url(assets/people-collage.png) no-repeat center center;
-        background-size: 250%;
-        flex: 68%;
-        align-content: center;
-        text-align: center;
-        color:white;
-        font-weight: bold;
-        font-size: small;
-        width: 250px;
-
-    }
-
-form h2{
-    margin-bottom: 5%;
-}
-
-label,input [type=text]{
-    display: flex;
-    flex-direction: column;
-}
-
-label{
-    text-align: left;
-    color:black;
-    font-weight: bold;
-    font-size: small;
-    width: 300px;
-    padding-top:2%;
-}
-
-input[type=text]{
-    border: none;
-    border-radius: 0.5em 0.5em;
-    padding: 1% 1%;
-    margin-bottom: 1%;
-    width: 300px;
-    height: 20px;
-    text-align: left center;
-    background:lightgrey;
-    color:black
-}
-
-form ul {
-    list-style-type: none;
-    padding-top: 0.5%;
-    padding-bottom: 1%;
-  }
-
-form ul li{
-    font-weight: bold;
-    font-size: small;
-}
-
-textarea{
-    margin-top:1%;   
-    margin-bottom:1%;
-}
-
-.submitButton{
-    padding: 0.5em 1.5em;
-    background-color: crimson;
-    border-color:crimson;
-    color: white;
-    border-radius: 1em 1em; /* rounded corner */
-}
-
-.submitButton:hover{
-    text-decoration: underline;
 }
 
 nav {
@@ -177,13 +81,210 @@ nav ul li {
 
 nav ul li a {
     padding: 0.25em 1em;
-    text-decoration: none; /* no underline */
+    text-decoration: none;
     color:white; 
-    border-radius: 1em 1em; /* rounded corner */
+    border-radius: 1em 1em;
   }
 
   nav ul li a:hover {
     background-color:white;
     color:black; 
   }
+
+section {
+    padding-top: 5%;
+    padding-bottom:5%;
+}
+
+section>h2{
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+section table {
+    border-collapse: collapse;
+    width: 100%;
+    }
+section th, td{
+    padding: 8px;
+    text-align: center;
+    border-right: 1px solid #DDD;
+    }
+
+@media (max-width: 800px){
+    .menu{
+        width:90%;
+        height: min-content;
+        padding-left:5%;
+        padding-bottom:5%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px 10px;
+        
+    }
+    
+    .events{
+        height: min-content;
+        display:flex;
+        flex-direction: row;
+        padding: 3px 3px;
+        flex-grow:1;
+    }
+    
+    .events:hover{
+        border: 2px solid blanchedalmond;
+    }
+        .logo{
+            flex:30%;
+            background-color: cornsilk;
+            align-content: center;
+            text-align: center;
+        }
+    
+        .description{
+            line-height: 1.5;
+            flex:70%;
+            margin-left: 10px;
+            align-content: center;
+            text-align: left;
+        }
+
+    .container {
+        padding-top: 20px;
+        width:100%;
+        height: min-content;
+        justify-content: center;
+    }
+        .regist-form{
+            background-color: cornsilk;
+            padding-bottom: 20px;
+            padding-left: 50px;
+            align-content: center;
+            justify-content:center;
+        }
+              
+        .video-ipa {
+            background-color: black;
+            align-content: center;
+            text-align: center;
+            color:white;
+            font-weight: bold;
+            font-size: small;
+            padding: 30px 10px;
+        }
+    }
+
+@media (min-width: 800px){
+    .menu {
+        width:90%;
+        height: min-content;
+        padding-left:5%;
+        padding-bottom:5%;
+        display:flex;
+        flex-direction: row;
+        flex-wrap:nowrap;
+        gap: 10px 20px;
+        justify-content: center;
+    }
+    
+    .events{
+        width: 100%;
+        height: min-content;
+        padding: 3px 3px;
+        display:flex;
+        flex-direction: column;
+        flex-grow:1;
+    }
+    
+    .events:hover{
+        border: 2px solid blanchedalmond;
+    }
+        .logo{
+            flex:30%;
+            background-color: cornsilk;
+            align-content: center;
+            text-align: center;
+            padding-top:10%;
+        }
+    
+        .description{
+            line-height: 1.5;
+            flex:70%;
+            align-content: top;
+            text-align: left;
+        }
+        .container {
+            padding-top: 20px;
+            width:100%;
+            height: min-content;
+            display: flex;
+        }
+            .regist-form{
+                flex: 32%;
+                background-color: cornsilk;
+                padding:2% 5%;
+            }
+                  
+            .video-ipa {
+                background-color:black;
+                flex: 68%;
+                align-content: center;
+                text-align: center;
+                color:white;
+                font-weight: bold;
+                font-size: small;
+                width: 250px;
+            }
+        }
+    
+
+
+form>h2{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+label,input[type=text]{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    text-align: left;
+    color:black;
+    font-weight: bold;
+    font-size: small;
+    width: 300px;
+    padding-top:2%;
+}
+
+input[type=text]{
+    border: none;
+    border-radius: 0.5em 0.5em;
+    padding: 1% 1%;
+    margin-bottom: 1%;
+    width: 300px;
+    height: 2em;
+    text-align: left center;
+    background:lightgrey;
+    color:black
+}
+
+form ul {
+    list-style-type: none;
+    padding-top: 0.5%;
+    padding-bottom: 1%;
+  }
+
+form ul li{
+    font-weight: bold;
+    font-size: small;
+}
+
+textarea{
+    margin-top:1%;   
+    margin-bottom:1%;
+}
 
