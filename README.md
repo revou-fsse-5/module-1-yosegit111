@@ -1,4 +1,3 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/_rEaNyCz)
 
 Hi, my name is Yosephine Gita Asaria Hutauruk
 
@@ -15,6 +14,6 @@ Tech sales professional currently working as Account Executive at MongoDB.
 |Instagram   |@yosegita     | 
 
 ## What I'm Building
-I'm building a simpile HTML site for Indonesian Professionals Association in Singapore. In this page, members can sign up and view upcoming events, as well as registering for them directly. 
+I'm building a simpile HTML site for Indonesian Professionals Association in Singapore. In this page, members can sign up and view upcoming events, as well as registering for them directly. You can visit my link [here](https://revou-fsse-5.github.io/module-1-yosegit111/).
 
 Thank you!
