@@ -68,6 +68,7 @@ nav {
     width: 100%;
     float:right;
     background-color:black;
+    z-index:1;
 }
 
 nav ul {
@@ -173,6 +174,89 @@ section th, td{
             font-size: small;
             padding: 30px 10px;
         }
+
+        .featured {
+            padding-bottom: 0.1vw;
+            padding-left:6vw;
+            width: 85%;
+            display:flex;
+            flex-direction: column;
+            height:max-content;
+        }
+        
+        .snapshots{
+            flex: 30%;
+            height: max-content;
+            display: flex;
+            flex-direction:row;
+        }
+        .prayer1{
+            flex: 50%;
+            overflow: hidden;
+        }
+        
+        .prayer2{
+            flex: 50%;
+            overflow: hidden;
+        }
+
+        .prayer1 img{
+            width:100%;
+            height: auto;
+            display:block;
+        }
+
+        .prayer2 img{
+            width:100%;
+            height: auto;
+            display:block;
+        }
+
+        .content{
+            flex: 70%;
+        }
+        
+        .content:hover{
+            background-color:floralwhite;
+            }
+            
+        .content>h2:hover{
+            text-decoration: underline;
+            cursor: pointer;
+            }
+        
+        
+
+        .others{
+            width: 95%;
+            padding-left:6vw;
+            padding-top:5vw;
+            display: grid;
+            grid-template-columns: repeat(2,minmax(0,1fr))
+            grid-template-rows: repeat(auto-fit,minmax(0,1fr));
+            grid-auto-flow: row;
+            grid-gap: 20px;
+        }
+        
+        .snip{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .snip:hover{
+        background: floralwhite;
+        }
+        
+        .snip>h3:hover{
+        text-decoration: underline;
+        cursor: pointer;
+        }
+        
+        .snip1{
+        grid-column-start:1;
+        grid-column-end:3;
+        }
+
     }
 
 @media (min-width: 800px){
@@ -236,6 +320,86 @@ section th, td{
                 font-size: small;
                 width: 250px;
             }
+            .featured {
+                padding-bottom: 0.1vw;
+                width: 95%;
+                display:flex;
+                flex-direction: row;
+                height:max-content;
+            }
+            
+            .snapshots{
+                flex: 30%;
+                margin-bottom: 0.2vw;
+                padding-left: 4vw;
+            }
+            .content{
+                flex: 70%;
+            }
+            
+            .content:hover{
+                background-color:floralwhite;
+                }
+                
+            .content>h2:hover{
+                text-decoration: underline;
+                cursor: pointer;
+                }
+            
+            
+            .prayer1{
+                position: absolute;
+            }
+            
+            .prayer2{
+                position: absolute;
+                animation: fade 7s infinite;
+                
+            }
+            
+            @keyframes fade{
+                0% {opacity: 1}
+                25% {opacity: 0.75}
+                25.25% {opacity: 0.5}
+                25.5% {opacity: 0.25}
+                25.75% {opacity: 0}
+                74% {opacity: 0}
+                74.5 {opacity: 0.25}
+                75% {opacity: 0.5}
+                75.5% {opacity: 0.75}
+                80% {opacity: 1}
+            }
+            
+            .others{
+                width: 95%;
+                padding-left:35px;
+                padding-top:5vw;
+                padding-right: 35px;
+                display: grid;
+                grid-template-columns: repeat(3,minmax(0,1fr))
+                grid-template-rows: repeat(auto-fit,minmax(0,1fr));
+                grid-auto-flow: row;
+                grid-gap: 20px;
+            }
+            
+            .snip{
+                margin: 10px;
+            }
+            
+            .snip:hover{
+            background: floralwhite;
+            }
+            
+            .snip>h3:hover{
+            text-decoration: underline;
+            cursor: pointer;
+            }
+            
+            .snip1{
+            grid-column-start:1;
+            grid-column-end:4;
+            }
+        
         }
     
 
