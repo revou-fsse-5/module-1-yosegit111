@@ -1,12 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
 *{
     margin: 0;
     padding: 0;
 }
 
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    line-height: 1.05;
+    letter-spacing: -.003em;
+    font-size: 20px;
+  }
+  
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-style: bold;
+    font-size: 38px;
+    line-height: 1.15;
+    letter-spacing: -.02em;
+    -webkit-font-smoothing: antialiased;
+  }
+
 a {
     text-decoration:none;
     color:white;
   }
+
+
 
 button {
     background: none;
@@ -51,12 +72,25 @@ header{
     width:100%;
     text-align: center;
     color:white;
-    padding-bottom: 20px;
+    padding-bottom: 75px;
+    transition-property: background;
+    transition-duration: 4s;
+}
+
+header:hover{
+    filter: grayscale(100%);
 }
 
 header h1{
     padding:10% 5% 1% 5%;
     font-size: 50px;
+    text-shadow: 2px 2px #808080;
+    transition-duration: 4s;
+}
+
+header h1:hover{
+    padding:10% 5% 1% 5%;
+    font-size: 55px;
     text-shadow: 2px 2px #808080;
 }
 
@@ -142,7 +176,7 @@ section th, td{
             align-content: center;
             text-align: center;
         }
-    
+
         .description{
             line-height: 1.5;
             flex:70%;
@@ -183,7 +217,6 @@ section th, td{
             flex-direction: column;
             height:max-content;
         }
-        
         .snapshots{
             flex: 30%;
             height: max-content;
@@ -212,25 +245,9 @@ section th, td{
             display:block;
         }
 
-        .content{
-            flex: 70%;
-        }
-        
-        .content:hover{
-            background-color:floralwhite;
-            }
-            
-        .content>h2:hover{
-            text-decoration: underline;
-            cursor: pointer;
-            }
-        
-        
-
         .others{
             width: 95%;
             padding-left:6vw;
-            padding-top:5vw;
             display: grid;
             grid-template-columns: repeat(2,minmax(0,1fr))
             grid-template-rows: repeat(auto-fit,minmax(0,1fr));
@@ -327,7 +344,6 @@ section th, td{
                 flex-direction: row;
                 height:max-content;
             }
-            
             .snapshots{
                 flex: 30%;
                 margin-bottom: 0.2vw;
@@ -369,11 +385,9 @@ section th, td{
                 75.5% {opacity: 0.75}
                 80% {opacity: 1}
             }
-            
             .others{
                 width: 95%;
                 padding-left:35px;
-                padding-top:5vw;
                 padding-right: 35px;
                 display: grid;
                 grid-template-columns: repeat(4,minmax(0,1fr))
@@ -382,6 +396,7 @@ section th, td{
                 grid-gap: 20px;
             }
             
+
             .snip{
                 margin: 10px;
             }
@@ -452,3 +467,20 @@ textarea{
     margin-bottom:1%;
 }
 
+section>h2{
+    text-align: center;
+    transition-duration: 4s;
+}
+
+section>h2:hover{
+    font-size: 40px;
+}
+
+article>h2{
+    text-align: center;
+    transition-duration: 4s;
+}
+
+article>h2:hover{
+    font-size: 40px;
+}
