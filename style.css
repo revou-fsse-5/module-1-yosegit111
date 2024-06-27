@@ -44,7 +44,7 @@ button {
     background-color: crimson;
     border-color:crimson;
     color: white;
-    border-radius: 1em 1em; /* rounded corner */
+    border-radius: 1em 1em;
 }
 
 .registerButton:hover{
@@ -55,7 +55,7 @@ button {
     background-color: crimson;
     border-color:crimson;
     color: white;
-    border-radius: 1em 1em; /* rounded corner */
+    border-radius: 1em 1em; 
 }
 
 .submitButton:hover{
@@ -73,12 +73,11 @@ header{
     text-align: center;
     color:white;
     padding-bottom: 75px;
-    transition-property: background;
-    transition-duration: 4s;
+    transition: background-size 4s;
 }
 
 header:hover{
-    filter: grayscale(100%);
+    background-size: 125%;
 }
 
 header h1{
@@ -340,14 +339,15 @@ section th, td{
             .featured {
                 padding-bottom: 0.1vw;
                 width: 95%;
-                display:flex;
+                display: flex;
                 flex-direction: row;
-                height:max-content;
+                min-height: 30vh;
             }
             .snapshots{
                 flex: 30%;
                 margin-bottom: 0.2vw;
                 padding-left: 4vw;
+                
             }
             .content{
                 flex: 70%;
@@ -364,11 +364,12 @@ section th, td{
             
             
             .prayer1{
-                position: absolute;
+                position:absolute;
+                min-height: fit-content;
             }
             
             .prayer2{
-                position: absolute;
+                position:absolute;
                 animation: fade 7s infinite;
                 
             }
